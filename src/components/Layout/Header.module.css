@@ -1,0 +1,33 @@
+* {
+    marrgin: 0;
+    padding: 0;
+    text-decoration: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-bottom: 1px solid #acacac;
+}
+
+.header h1 {
+    color: #121212;
+}
+
+.sideMenu a {
+    display: inline-block;
+    color: #121212;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.sideMenu a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.sideMenu {
+    display: flex;
+    align-items: center;
+}
