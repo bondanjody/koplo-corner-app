@@ -5,10 +5,18 @@
 }
 
 .header {
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
     border-bottom: 1px solid #acacac;
+    position: -webkit-sticky;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 1px 1px 9px #787878;
 }
 
 .header h1 {
