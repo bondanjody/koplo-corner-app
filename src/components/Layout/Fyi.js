@@ -10,6 +10,9 @@ const Fyi = () => {
         <div className={classes['fyi-container']}>
             <div className={classes['fyi-button']}>Prev</div>
             <div className={classes['fyi-content']}>
+                <div className={classes['fyi-content__header']}>
+                    <p>What do you know about 'ketipung' ?</p>
+                </div>
                 <div>
                     <img src={ketipungPic} className={classes['fyi-image']} alt="ketipung.png" />
                 </div>
