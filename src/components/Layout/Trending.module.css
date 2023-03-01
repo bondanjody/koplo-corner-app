@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 5px 5px 2px #cecece;;
+    box-shadow: 5px 5px 10px #454545;
 }
 .song-image {
     width:100%;
