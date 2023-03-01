@@ -1,0 +1,53 @@
+.footer {
+    background-color: #091221;
+    color: white;
+    display:flex;
+    justify-content: space-evenly;
+}
+.social-section, .subscribe-section {
+    width: 40%;
+    margin-bottom: 3rem;
+}
+.footer-header p {
+    font-size: 2rem;
+}
+.newsletter-description {
+    font-size: 1.2rem;
+}
+label {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+input {
+    display: block;
+    width: 70%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f5f74f;
+}
+button:hover {
+    cursor: pointer;
+}
+.contact-us__links a {
+    text-decoration: none;
+    color: #acacac;
+    font-size: 0.8rem;
+}
+.contact-us__links p a {
+    display:flex;
+    align-items: center;
+}
+.contact-us__links p a:hover {
+    color: white
+}
+.contact-us__links p a img {
+    width: 20px;
+    margin: 0 1rem;
+}
