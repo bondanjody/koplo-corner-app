@@ -1,0 +1,45 @@
+.container {
+    background-color: #243a5e;
+    color: white;
+    margin-top: 3rem;
+    padding: 0.1rem 1rem;
+}
+.genre-container__content {
+    display: flex;
+    justify-content: center;
+}
+.genre-content {
+    border: 1px solid white;
+    margin: 2rem;
+    padding: 1.5rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.genre-content img {
+    width: 80%;
+}
+.genre-description {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.genre-description h4 {
+    text-align: center;
+    font-size: 2rem;
+
+}
+.genre-description p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+.genre-description h4, .genre-description p {
+    margin: 0;
+}
+.genre-vs {
+    align-self: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
