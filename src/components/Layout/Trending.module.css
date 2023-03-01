@@ -1,0 +1,43 @@
+.trending-header {
+    padding: 0 1rem;
+}
+.trending-contents {
+    display: flex;
+    justify-content: space-evenly;
+}
+.trending-contents > div {
+    border: 1px solid #acacac;
+    width: 20%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 2px #cecece;;
+}
+.song-image {
+    width:100%;
+}
+.song-image img{
+    max-width: 100%;
+}
+.song-description {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+.song-title, .song-title-translation {
+    margin: 0;
+}
+.song-title {
+    font-weight: bold;
+}
+.song-title-translation {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+.song-artist {
+    color: #212121;
+    font-size: 0.9rem;
+}
