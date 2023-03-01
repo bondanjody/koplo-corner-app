@@ -1,6 +1,7 @@
 .fyi-header {
     margin-top: 3rem;
     padding: 0 1rem;
+    border-left: 0.5rem solid #243a5e;
 }
 .fyi-container {
     padding: 0 0.5rem;

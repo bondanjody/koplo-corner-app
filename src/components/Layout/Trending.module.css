@@ -1,5 +1,6 @@
 .trending-header {
     padding: 0 1rem;
+    border-left: 0.5rem solid #243a5e;
 }
 .trending-contents {
     display: flex;
