@@ -10,37 +10,44 @@ const Fyi = () => {
         {
             id: 1,
             pic: ketipungPic,
-            title: '<p>What do you know about \'ketipung\' ?',
-            content: '<p>Ketipung is a minified version of Javanese musical instrument of Kendang. It is one of the most important instruments in Koplo music, because its role in the music rhythm.</p><p>Although Ketipung and Kendang are both related, the sound it produces is slightly different. Ketipung has a "cruncy" sound, while Kendang has more "deep" sound. </p>'
+            title: 'What do you know about \'ketipung\' ?',
+            content: 'Ketipung is a minified version of Javanese musical instrument of Kendang. It is one of the most important instruments in Koplo music, because its role in the music rhythm. Although Ketipung and Kendang are both related, the sound it produces is slightly different. Ketipung has a "cruncy" sound, while Kendang has more "deep" sound.'
         },
         {
             id: 2,
             pic: didiKempotPic,
-            title: '<p>Introducing \'The Godfather of the Broken-Hearted\'</p>',
-            content: '<p>Didi Kempot (31 December 1966 – 5 May 2020) was an Indonesian singer and songwriter in the campursari style. He wrote some 700 songs, mainly in his native Javanese language. Apart from Indonesia, Didi was also popular in Suriname and the Netherlands, both of which have significant Javanese diaspora population.</p><p>The vast majority of his songs are themed around heartbreaks and other sad love stories. Because of this, he earned the nickname "The Godfather of the Broken-Hearted" during his later years.</p>'
+            title: 'Introducing \'The Godfather of the Broken-Hearted\'',
+            content: 'Didi Kempot (31 December 1966 - 5 May 2020) was an Indonesian singer and songwriter in the campursari style. He wrote some 700 songs, mainly in his native Javanese language. Apart from Indonesia, Didi was also popular in Suriname and the Netherlands, both of which have significant Javanese diaspora population. The vast majority of his songs are themed around heartbreaks and other sad love stories. Because of this, he earned the nickname "The Godfather of the Broken-Hearted" during his later years.'
         }
 
     ];
+
+    const nextHandler = () => {
+        setShowDataFyi(prevData => prevData+1);
+    }
+
+    const prevHandler = () => {
+        setShowDataFyi(prevData => prevData-1);
+    }
 
     return <Fragment>
         <div className={classes['fyi-header']}>
             <h2>For Your Information</h2>
         </div>
         <div className={classes['fyi-container']}>
-            <button className={classes['fyi-button']}>Prev</button>
+            <button className={classes['fyi-button']} onClick={prevHandler}>Prev</button>
             <div className={classes['fyi-content']}>
                 <div className={classes['fyi-content__header']}>
-                    <p>What do you know about 'ketipung' ?</p>
+                    {fyiList[showDataFyi].title}
                 </div>
                 <div>
-                    <img src={ketipungPic} className={classes['fyi-image']} alt="ketipung.png" />
+                    <img src={fyiList[showDataFyi].pic} className={classes['fyi-image']} alt="ketipung.png" />
                 </div>
                 <div>
-                    <p>Ketipung is a minified version of Javanese musical instrument of Kendang. It is one of the most important instruments in Koplo music, because its role in the music rhythm.</p> 
-                    <p>Although Ketipung and Kendang are both related, the sound it produces is slightly different. Ketipung has a "cruncy" sound, while Kendang has more "deep" sound. </p>
+                    {fyiList[showDataFyi].content}
                 </div>
             </div>
-            <button className={classes['fyi-button']}>Next</button>
+            <button className={classes['fyi-button']} onClick={nextHandler}>Next</button>
         </div>
     </Fragment>
 }
