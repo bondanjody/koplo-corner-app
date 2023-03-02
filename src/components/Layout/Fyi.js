@@ -48,10 +48,10 @@ const Fyi = () => {
                 <div className={classes['fyi-content__header']}>
                     {fyiList[showDataFyi].title}
                 </div>
-                <div>
+                <div className={classes['fyi-image__container']}>
                     <img src={fyiList[showDataFyi].pic} className={classes['fyi-image']} alt={fyiList[showDataFyi].pic} />
                 </div>
-                <div>
+                <div className={classes['fyi-description']}>
                     {fyiList[showDataFyi].content}
                 </div>
             </div>
