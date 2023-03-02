@@ -17,7 +17,7 @@ const Footer = () => {
                     <input type='text' id='name' /><br />
                     <label htmlFor='email'>Your email :</label><br />
                     <input type='email' id='email' /><br />
-                    <button>Subscribe</button>
+                    <button className={classes['subscribe-button']}>Subscribe</button>
                 </form>
             </div>
             <div className={classes['social-section']}>

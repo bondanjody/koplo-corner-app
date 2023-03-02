@@ -1,9 +1,11 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import classes from './Fyi.module.css';
 import ketipungPic from '../../assets/ketipung.jpg';
 import didiKempotPic from '../../assets/didikempot.jpg';
 
 const Fyi = () => {
+    const [showDataFyi, setShowDataFyi] = useState(0);
+
     const fyiList = [
         {
             id: 1,
@@ -25,7 +27,7 @@ const Fyi = () => {
             <h2>For Your Information</h2>
         </div>
         <div className={classes['fyi-container']}>
-            <div className={classes['fyi-button']}>Prev</div>
+            <button className={classes['fyi-button']}>Prev</button>
             <div className={classes['fyi-content']}>
                 <div className={classes['fyi-content__header']}>
                     <p>What do you know about 'ketipung' ?</p>
@@ -38,7 +40,7 @@ const Fyi = () => {
                     <p>Although Ketipung and Kendang are both related, the sound it produces is slightly different. Ketipung has a "cruncy" sound, while Kendang has more "deep" sound. </p>
                 </div>
             </div>
-            <div className={classes['fyi-button']}>Next</div>
+            <button className={classes['fyi-button']}>Next</button>
         </div>
     </Fragment>
 }
