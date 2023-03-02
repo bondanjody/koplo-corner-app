@@ -5,6 +5,8 @@ import didiKempotPic from '../../assets/didikempot.jpg';
 
 const Fyi = () => {
     const [showDataFyi, setShowDataFyi] = useState(0);
+    // const [nextDisabled, setNextDisabled] = useState(false);
+    // const [prevDisabled, setPrevDisabled] = useState(true);
 
     const fyiList = [
         {
@@ -23,10 +25,16 @@ const Fyi = () => {
     ];
 
     const nextHandler = () => {
+        if (showDataFyi === fyiList.length-1) {
+            return setShowDataFyi(0);
+        }
         setShowDataFyi(prevData => prevData+1);
     }
 
     const prevHandler = () => {
+        if (showDataFyi === 0) {
+            return setShowDataFyi(fyiList.length-1);
+        }
         setShowDataFyi(prevData => prevData-1);
     }
 
@@ -41,7 +49,7 @@ const Fyi = () => {
                     {fyiList[showDataFyi].title}
                 </div>
                 <div>
-                    <img src={fyiList[showDataFyi].pic} className={classes['fyi-image']} alt="ketipung.png" />
+                    <img src={fyiList[showDataFyi].pic} className={classes['fyi-image']} alt={fyiList[showDataFyi].pic} />
                 </div>
                 <div>
                     {fyiList[showDataFyi].content}
