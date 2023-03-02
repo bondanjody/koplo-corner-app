@@ -10,7 +10,10 @@ const Trending = () => {
             <h2>Trending</h2>
         </div>
         <div className={classes['trending-contents']}>
-            <div>
+            <div className={classes['trending-container']}>
+                <div className={classes['trending-ranking']}>
+                    <p>1</p>
+                </div>
                 <div className={classes['song-image']}>
                     <img src={critoMustahil} alt="critoMustahil.png" />
                 </div>
@@ -20,7 +23,10 @@ const Trending = () => {
                     <p className={classes['song-artist']}>Denny Caknan</p>
                 </div>
             </div>
-            <div>
+            <div className={classes['trending-container']}>
+            <div className={classes['trending-ranking']}>
+                    <p>2</p>
+                </div>
                 <div className={classes['song-image']}>
                     <img src={lintangSewengi} alt="lintangSewengi.png" />
                 </div>
@@ -30,7 +36,10 @@ const Trending = () => {
                     <p className={classes['song-artist']}>Ndarboy Genk</p>
                 </div>
             </div>
-            <div>
+            <div className={classes['trending-container']}>
+            <div className={classes['trending-ranking']}>
+                    <p>3</p>
+                </div>
                 <div className={classes['song-image']}>
                     <img src={mangkuPurel} alt="mangkuPurel.png" />
                 </div>

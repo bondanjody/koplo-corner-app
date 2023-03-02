@@ -17,6 +17,7 @@
     right: 0;
     left: 0;
     box-shadow: 1px 1px 9px #787878;
+    z-index: 99;
 }
 
 .header h1 {

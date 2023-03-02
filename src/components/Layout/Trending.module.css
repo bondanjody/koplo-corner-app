@@ -2,11 +2,24 @@
     padding: 0 1rem;
     border-left: 0.5rem solid #243a5e;
 }
+.trending-ranking {
+    width: 2rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
 .trending-contents {
     display: flex;
     justify-content: space-evenly;
 }
-.trending-contents > div {
+.trending-container {
     border: 1px solid #acacac;
     width: 20%;
     border-radius: 0.5rem;
@@ -15,6 +28,7 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 5px 5px 10px #454545;
+    position: relative;
 }
 .song-image {
     width:100%;
