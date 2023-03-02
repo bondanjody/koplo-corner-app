@@ -1,6 +1,11 @@
 .trending-header {
     padding: 0 1rem;
     border-left: 0.5rem solid #243a5e;
+    margin-bottom: 2rem;
+}
+.trending-contents {
+    display: flex;
+    justify-content: space-evenly;
 }
 .trending-ranking {
     width: 2rem;
@@ -15,10 +20,6 @@
     top: -1rem;
     left: -1rem;
 }
-.trending-contents {
-    display: flex;
-    justify-content: space-evenly;
-}
 .trending-container {
     border: 1px solid #acacac;
     width: 20%;
@@ -29,6 +30,11 @@
     justify-content: space-between;
     box-shadow: 5px 5px 10px #454545;
     position: relative;
+    transition: translate 500ms;
+}
+.trending-container:hover {
+    translate: 0px -15px;
+    cursor: pointer;
 }
 .song-image {
     width:100%;
