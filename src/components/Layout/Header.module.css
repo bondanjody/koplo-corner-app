@@ -1,14 +1,15 @@
 * {
-    marrgin: 0;
+    margin: 0;
     padding: 0;
     text-decoration: 0;
 }
 
 .header {
-    /* width: 100%; */
     display: flex;
     justify-content: space-between;
-    padding: 0 2rem;
+    align-items: center;
+    padding: 0.5rem 0.9rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #acacac;
     position: -webkit-sticky;
     background-color: white;
@@ -23,20 +24,20 @@
 .header h1 {
     color: #121212;
 }
-
-.sideMenu a {
-    display: inline-block;
-    color: #121212;
-    text-align: center;
-    padding: 0 2rem;
-}
-
-.sideMenu a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
 .sideMenu {
+    padding: 0.5rem;
     display: flex;
-    align-items: center;
 }
+.sideMenu a {
+    color: black;
+    padding: 0.5rem;
+    display: block;
+    transition-property: background-color, color;
+    transition-duration: 300ms, 300ms;
+}
+.sideMenu a:hover {
+    background-color: black;
+    color: white;
+}
+
+
