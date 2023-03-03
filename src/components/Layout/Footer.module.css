@@ -6,6 +6,7 @@
 }
 .social-section, .subscribe-section {
     width: 30%;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 .footer-header p {
@@ -13,6 +14,10 @@
 }
 .newsletter-description {
     font-size: 1.2rem;
+}
+.subscribe-section form, .newsletter-description {
+    padding: 0.5rem;
+    font-weight: lighter;
 }
 label {
     font-style: italic;
@@ -35,6 +40,9 @@ input {
 .subscribe-button:hover {
     cursor: pointer;
 }
+.contact-us__links {
+    padding: 0.5rem;
+}
 .contact-us__links a {
     text-decoration: none;
     color: #acacac;
@@ -42,10 +50,11 @@ input {
 }
 .contact-us__links p a {
     display:flex;
+    padding-top: 1rem;
     align-items: center;
 }
 .contact-us__links p a:hover {
-    color: white
+    color: white;
 }
 .contact-us__links p a img {
     width: 20px;
