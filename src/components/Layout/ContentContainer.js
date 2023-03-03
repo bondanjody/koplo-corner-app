@@ -9,12 +9,13 @@ const Backdrop = () => {
     return <div className={classes.backdrop}></div>
 }
 
-const Content = () => {
+const Content = props => {
     return <div className={classes.modal}>
         <div className={classes['image-container']}>
             <img src={critoMustahilPic} alt='critoMustahil' />
         </div>
         <div className={classes['song-container']}>
+            <div className={classes['close-lyrics']}>❌</div>
             <div className={classes['song-title']}>
                 <p>Crito Mustahil</p>
             </div>
@@ -22,21 +23,25 @@ const Content = () => {
                 <p>Artist : Denny Caknan</p>
             </div>
             <div className={classes['song-lyrics']}>
-                <p className={classes['lyrics-label']}>Lyrics :</p>
-                <p>Ini lirik</p>
-                <p>Ini lirik</p>
-                <p>Ini lirik</p>
-                <p>Ini lirik</p>
+                <div className={classes['lyrics-label']}>
+                    <p>Lyrics :</p>
+                </div>
+                <div className={classes['lyrics-content']} dangerouslySetInnerHTML={{__html: props.lyricsData[0].lyrics}}>
+                    {/* <p>Ini lirik</p>
+                    <p>Ini lirik</p>
+                    <p>Ini lirik</p>
+                    <p>Ini lirik</p> */}
+                </div>
             </div>
         </div>
     </div>
 }
 
-const ContentContainer = () => {
+const ContentContainer = props => {
     return (
         <Fragment>
             {ReactDOM.createPortal(<Backdrop />, document.getElementById('backdrop'))}
-            {ReactDOM.createPortal(<Content />, document.getElementById('modal'))}
+            {ReactDOM.createPortal(<Content lyricsData={props.lyricsData} />, document.getElementById('modal'))}
         </Fragment>
     )
 

@@ -7,8 +7,63 @@ import Footer from "./components/Layout/Footer";
 import ContentContainer from "./components/Layout/ContentContainer";
 
 function App() {
+  const lyricsLibrary = [
+    {
+      artist: 'Denny Caknan',
+      title: 'Crito Mustahil',
+      lyrics: `<p>Aku wis tau
+      <p>(I have known)
+      <p>Ngrasakne jerune kedanan
+      <p>(To feel )
+      <p>Ngrasakne bundase kelaran
+      <p>(To feel the wound of hurt)
+      <p>Ngrasakne nangisi ning ra ketaran
+      <p>(To feel the endless tears)
+      <br>
+      <br>
+      <p>Aku ngiyani
+      <p>(I said yes)
+      <p>Omongmu seng kesel jalani
+      <p>(To your words that are tired of going through this)
+      <p>Misal memang keputusanmu
+      <p>(If that's your decision)
+      <p>Tak lilak-lilakne kelangan awakmu
+      <p>(I'm willing to lose you)
+      <br>
+      <br>
+      <p>Bridge:
+      <p>Mung pengen ngandani
+      <p>(Just wanna tell)
+      <p>Sadar aku du seleramu saiki
+      <p>(Realizing I'm not your taste now)
+      <p>Mung pengen negesi
+      <p>(Just to make sure)
+      <p>Ati- ati yen kangen kabari
+      <p>(Be careful, let me know if you miss me)
+      <br>
+      <br>
+      <p>Reff :
+      <p>Ra maksane, niat gandeng mu ro aku
+      <p>(Not forcing, my intention to be with you)
+      <p>Cerito iki, cerito mustahil nggo aku
+      <p>(This story, it's impossible story for me)
+      <p>Karep ati mastekne kabeh senengmu
+      <p>(My heart's desire, confirms all your desires)
+      <p>Ning sanding mu ra bakal ngilang
+      <p>(Beside you will not disappear)
+      <p>Kembang ngipi saben wengi
+      <p>(Dream flowers every night)
+      <p>Ra nyongko luput tak nduweni
+      <p>(I don't think I got it wrong)
+      <p>Mugo lungo ku , nglegakne atimu
+      <p>(May my leaving satisfy you)
+      <br>
+      <br>
+      <p>Back to Bridge`
+    }
+  ]
   return <Fragment>
-    <ContentContainer />
+    <ContentContainer lyricsData={lyricsLibrary} />
     <Header />
     <Trending />
     <Fyi />

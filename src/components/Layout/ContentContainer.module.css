@@ -10,8 +10,9 @@
 .modal {
     position: fixed;
     top: 2rem;
-    left:2rem;
-    width: 90%;
+    left:22%;
+    bottom: 2rem;
+    width: 50%;
     margin: auto;
     z-index: 100;
     overflow: hidden;
@@ -24,6 +25,7 @@
 }
 .song-container {
     margin-left: 1rem;
+    position: relative;
 }
 .song-title {
     font-size: 2rem;
@@ -34,8 +36,25 @@
     font-weight: lighter;
 }
 .song-lyrics {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+}
+.close-lyrics {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -2rem;
+    right: -2rem;
 }
 .lyrics-label {
     font-weight: bold;
+}
+.lyrics-content {
+    margin-top:0.5rem;
+    font-size: 0.9rem;
+    height: 25rem;
+    overflow: scroll;
 }
