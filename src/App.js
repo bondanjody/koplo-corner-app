@@ -11,6 +11,8 @@ import mangkuPurelPic from './assets/mangku-purel.png';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [finalResult, setFinalResult] = useState({}); 
+  
   const songTrendingDatas = [
     {
       chartNumber: '1',
@@ -38,21 +40,27 @@ function App() {
     }
   ];
 
-  const showTrendingContent = () => {
-    setShowModal(true);
-  }
-
   const hideTrendingContent = () => {
     setShowModal(false);
   }
 
+  const getChartNumber = chartNum => {
+    const filteredTrendingContent = songTrendingDatas.filter(data => data.chartNumber===chartNum);
+    setFinalResult(() => {
+      const [newData] = filteredTrendingContent;
+      return {...newData};
+    })
+    setShowModal(true);
+  }
+
   return <Fragment>
-    {showModal && <ContentContainer lyricsData={songTrendingDatas} onHide={hideTrendingContent} />}
+    {showModal && <ContentContainer lyricsData={finalResult} onHide={hideTrendingContent} />}
     <Header />
-    <Trending songData={songTrendingDatas} onShow={showTrendingContent} />
+    <Trending songData={songTrendingDatas} onGetChartNum={getChartNumber} />
     <Fyi />
     <Genre />
     <Footer />
+    
   </Fragment>
 }
 

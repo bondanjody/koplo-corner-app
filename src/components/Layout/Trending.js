@@ -8,7 +8,7 @@ const Trending = props => {
         </div>
         <div className={classes['trending-contents']}>
             {props.songData.map(data => (
-                <div className={classes['trending-container']} onClick={props.onShow}>
+                <div className={classes['trending-container']} onClick={() => props.onGetChartNum(data.chartNumber)}>
                 <div className={classes['trending-ranking']}>
                     <p>{data.chartNumber}</p>
                 </div>
