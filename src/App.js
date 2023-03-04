@@ -8,6 +8,7 @@ import ContentContainer from "./components/Layout/ContentContainer";
 import critoMustahilPic from './assets/crito-mustahil.png';
 import lintangSewengiPic from './assets/lintang-sewengi.png';
 import mangkuPurelPic from './assets/mangku-purel.png';
+import sewuKutoPng from './assets/sewukuto.png';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -28,14 +29,14 @@ function App() {
       title: 'Lintang Sewengi',
       titleTranslation: 'One Night Star',
       image: lintangSewengiPic,
-      lyrics: ''
+      lyrics: `<p>Yen ono salah ning uripku<p>(If there's fault in my life)<p>Kulo nyuwun pangapuramu<p>(I'm asking for your forgiveness)<p>Aku sih pingin lanjut<p>(I'm still willing to continue)<p>Senajan wis kebacut<p><p>Tak akoni aku sing luput<p>(I admit, I was wrong)<br><br><p>Udan udano sing gede<p>(Rain, please be a heavy rain)<p>Gelintirno eluhku iki<p>(Take out all of my tears)<p>Gowono mili<p>(Take it away by your stream)<p>Ojo mbok gowo bali<p>(Never bring it back)<p>Salahku sing wingi uwis tak getuni<p>(My mistakes in the past that I regret)<br><br><p>Bridge : <p>Bubar, ora tak baleni<p>(Dispersed, I won't do it again)<p>Remuk redam ati iki<p>Koyo ngene wong kelangan<p><p>Rasane ora karuan<p>Mergo salah dalan<br><br><p>Reff : <p>Lintang sewengi<p>(One night star)<p>Cukup sewengi iki<p>(Just for tonight)<p>Ra bakal tak nduweni<p>(Will never be mine)<p>Mung ngeridu ati<p>Tresno mung sak kedep moto<p>(Love just for a twinkling of an eye)<p>Kowe teko amung dadi goda<p>(You came just to be a temptation)<br><br><p>Gebyar netramu<p>(Your great sight)<p>Mung pandelengan semu<p>(Just a sight of illusion)<p>Ngluluhke atiku<p>(Make my heart melted)<p>Ninggal tatu jeru<p>(Left a deep hole)<p>Aku lan kowe cukup<p>(Me and you, enough)<p>Cukup sewengi wae<p>(Enough just for a night)<br><br><p>Back to Bridge`
     },
     {
       chartNumber: '3',
-      artist: 'Niken Salindry',
-      title: 'Mangku Purel',
-      titleTranslation: 'Got a Slut on You',
-      image: mangkuPurelPic,
+      artist: 'Didi Kempot',
+      title: 'Sewu Kuto',
+      titleTranslation: 'A Thousand Cities',
+      image: sewuKutoPng,
       lyrics: ''
     }
   ];
