@@ -17,13 +17,20 @@
     z-index: 100;
     overflow: hidden;
     background-color: white;
-    display: flex;
-    padding: 2rem;
     border-radius: 0.5rem;
 }
+.container {
+    display: flex;
+    padding: 2rem;
+}
 .image-container {
+    flex-grow: 1;
+}
+.image-container img {
+    width: 100%;
 }
 .song-container {
+    flex-grow: 1;
     margin-left: 1rem;
     position: relative;
 }
