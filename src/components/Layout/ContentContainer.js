@@ -15,7 +15,7 @@ const Content = props => {
             <img src={critoMustahilPic} alt='critoMustahil' />
         </div>
         <div className={classes['song-container']}>
-            <div className={classes['close-lyrics']}>❌</div>
+            <div className={classes['close-lyrics']}>X</div>
             <div className={classes['song-title']}>
                 <p>Crito Mustahil</p>
             </div>
@@ -27,10 +27,6 @@ const Content = props => {
                     <p>Lyrics :</p>
                 </div>
                 <div className={classes['lyrics-content']} dangerouslySetInnerHTML={{__html: props.lyricsData[0].lyrics}}>
-                    {/* <p>Ini lirik</p>
-                    <p>Ini lirik</p>
-                    <p>Ini lirik</p>
-                    <p>Ini lirik</p> */}
                 </div>
             </div>
         </div>

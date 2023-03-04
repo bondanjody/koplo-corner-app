@@ -48,6 +48,12 @@
     position: absolute;
     top: -2rem;
     right: -2rem;
+    font-weight: bold;
+    transition: color 300ms;
+}
+.close-lyrics:hover {
+    color: lightgray;
+    cursor: pointer;
 }
 .lyrics-label {
     font-weight: bold;
