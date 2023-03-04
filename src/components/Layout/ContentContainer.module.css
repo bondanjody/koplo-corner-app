@@ -27,9 +27,12 @@
     margin-left: 1rem;
     position: relative;
 }
-.song-title {
+.song-title .title {
     font-size: 2rem;
     font-weight: bold;
+}
+.title-translation {
+    font-style: italic;
 }
 .song-description {
     margin-top: 0.5rem;

@@ -15,9 +15,10 @@ const Content = props => {
             <img src={critoMustahilPic} alt='critoMustahil' />
         </div>
         <div className={classes['song-container']}>
-            <div className={classes['close-lyrics']}>X</div>
+            <div className={classes['close-lyrics']} onClick={props.onHide}>X</div>
             <div className={classes['song-title']}>
-                <p>Crito Mustahil</p>
+                <p className={classes['title']}>Crito Mustahil</p>
+                <p className={classes['title-translation']}>(Impossible Story)</p>
             </div>
             <div className={classes['song-description']}>
                 <p>Artist : Denny Caknan</p>
@@ -37,7 +38,7 @@ const ContentContainer = props => {
     return (
         <Fragment>
             {ReactDOM.createPortal(<Backdrop />, document.getElementById('backdrop'))}
-            {ReactDOM.createPortal(<Content lyricsData={props.lyricsData} />, document.getElementById('modal'))}
+            {ReactDOM.createPortal(<Content lyricsData={props.lyricsData} onHide={props.onHide} />, document.getElementById('modal'))}
         </Fragment>
     )
 

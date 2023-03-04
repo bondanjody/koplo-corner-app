@@ -36,12 +36,20 @@ function App() {
       image: mangkuPurelPic,
       lyrics: ''
     }
+  ];
 
-  ]
+  const showTrendingContent = () => {
+    setShowModal(true);
+  }
+
+  const hideTrendingContent = () => {
+    setShowModal(false);
+  }
+
   return <Fragment>
-    {showModal && <ContentContainer lyricsData={songTrendingDatas} />}
+    {showModal && <ContentContainer lyricsData={songTrendingDatas} onHide={hideTrendingContent} />}
     <Header />
-    <Trending songData={songTrendingDatas} />
+    <Trending songData={songTrendingDatas} onShow={showTrendingContent} />
     <Fyi />
     <Genre />
     <Footer />
