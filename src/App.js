@@ -7,7 +7,6 @@ import Footer from "./components/Layout/Footer";
 import ContentContainer from "./components/Layout/ContentContainer";
 import critoMustahilPic from './assets/crito-mustahil.png';
 import lintangSewengiPic from './assets/lintang-sewengi.png';
-import mangkuPurelPic from './assets/mangku-purel.png';
 import sewuKutoPng from './assets/sewukuto.png';
 
 function App() {
@@ -37,7 +36,7 @@ function App() {
       title: 'Sewu Kuto',
       titleTranslation: 'A Thousand Cities',
       image: sewuKutoPng,
-      lyrics: ''
+      lyrics: `<p>Sewo kuto uwis tak liwati<p>(A thousand cities <p>Sewu ati tak takoni<p>(A thousand hearts <p>Nanging kabeh<p>(But all of them)<p>Podo rangerteni<p>(Have no idea)<p>Lungamu neng endi<p>(Where were you going)<p>Pirang tahun anggonku nggoleki<p>(For years I've been looking for)<p>Seprene durung biso nemoni<p>(Until now have not met)<br><br><p>Reff :<p>Wis tak coba<p>(I tried)<p>Nglaliake<p>(Take away)<p>Jenengmu soko atiku<p>(Your name away from my heart)<p>Sak tenane aku ora ngapusi<p>(The truth is I never lied)<p>Isih tresno sliramu<p>(Still falling in love with you)<br><br><p>Umpamane kowe uwis mulyo<p>(In case you have reached success)<p>Lilo aku lilo<p>(I'm willing)<p>Yo mung siji dadi panyuwunku<p>(One thing that I asked for)<p>Aku pengin ketemu<p>(I want to meet you)<p>Senajan waktumu mung sedhela<p>(even though just for a moment)<p>Kanggo tombo kangen jroning dodo<p>(It becomes medicine for longing in my chest)<br><br><p>Wis tak coba<p>(I tried)<p>Nglaliake<p>(Take away)<p>Jenengmu soko atiku<p>(Your name away from my heart)<p>Sak tenane aku ora ngapusi<p>Isih tresno sliramu<p>Umpamane kowe uwis mulyo<p>Lilo aku lilo<p>Yo mung siji dadi panyuwunku<p>Aku pengin ketemu<p>Senajan sak kedeping moto<p>Tak nggo tombo kangen jroning dodo<p>Senajan waktumu mung sedhela<p>(Even though just for a seconds)<p>Tak nggo tombo kangen jroning dodo`
     }
   ];
 
