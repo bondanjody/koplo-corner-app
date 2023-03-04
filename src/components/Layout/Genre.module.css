@@ -8,6 +8,10 @@
     padding-right: 1rem;
     padding-bottom: 2rem;
 }
+.genre-container__header {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
 .genre-container__content {
     display: flex;
     justify-content: center;

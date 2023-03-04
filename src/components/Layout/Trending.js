@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 import classes from './Trending.module.css';
-import critoMustahil from '../../assets/crito-mustahil.png';
-import lintangSewengi from '../../assets/lintang-sewengi.png';
-import mangkuPurel from '../../assets/mangku-purel.png';
+// import critoMustahil from '../../assets/crito-mustahil.png';
+// import lintangSewengi from '../../assets/lintang-sewengi.png';
+// import mangkuPurel from '../../assets/mangku-purel.png';
 
-const Trending = () => {
+const Trending = props => {
     return <Fragment>
         <div className={classes['trending-header']}>
             <h2>Trending</h2>
@@ -12,41 +12,41 @@ const Trending = () => {
         <div className={classes['trending-contents']}>
             <div className={classes['trending-container']}>
                 <div className={classes['trending-ranking']}>
-                    <p>1</p>
+                    <p>{props.songData[0].chartNumber}</p>
                 </div>
                 <div className={classes['song-image']}>
-                    <img src={critoMustahil} alt="critoMustahil.png" />
+                    <img src={props.songData[0].image} alt="critoMustahil.png" />
                 </div>
                 <div className={classes['song-description']}>
-                    <p className={classes['song-title']}>Crito Mustahil </p>
-                    <p className={classes['song-title-translation']}>(Impossible Story)</p>
-                    <p className={classes['song-artist']}>Denny Caknan</p>
+                    <p className={classes['song-title']}>{props.songData[0].title} </p>
+                    <p className={classes['song-title-translation']}>({props.songData[0].titleTranslation})</p>
+                    <p className={classes['song-artist']}>{props.songData[0].artist}</p>
                 </div>
             </div>
             <div className={classes['trending-container']}>
             <div className={classes['trending-ranking']}>
-                    <p>2</p>
+                    <p>{props.songData[1].chartNumber}</p>
                 </div>
                 <div className={classes['song-image']}>
-                    <img src={lintangSewengi} alt="lintangSewengi.png" />
+                    <img src={props.songData[1].image} alt="lintangSewengi.png" />
                 </div>
                 <div className={classes['song-description']}>
-                    <p className={classes['song-title']}>Lintang Sewengi </p>
-                    <p className={classes['song-title-translation']}>(One Night Star)</p>
-                    <p className={classes['song-artist']}>Ndarboy Genk</p>
+                    <p className={classes['song-title']}>{props.songData[1].title} </p>
+                    <p className={classes['song-title-translation']}>({props.songData[1].titleTranslation})</p>
+                    <p className={classes['song-artist']}>{props.songData[1].artist}</p>
                 </div>
             </div>
             <div className={classes['trending-container']}>
             <div className={classes['trending-ranking']}>
-                    <p>3</p>
+                    <p>{props.songData[2].chartNumber}</p>
                 </div>
                 <div className={classes['song-image']}>
-                    <img src={mangkuPurel} alt="mangkuPurel.png" />
+                    <img src={props.songData[2].image} alt="mangkuPurel.png" />
                 </div>
                 <div className={classes['song-description']}>
-                    <p className={classes['song-title']}>Mangku Purel </p>
-                    <p className={classes['song-title-translation']}>(Got a Slut on You)</p>
-                    <p className={classes['song-artist']}>Niken Salindry</p>
+                    <p className={classes['song-title']}>{props.songData[2].title} </p>
+                    <p className={classes['song-title-translation']}>({props.songData[2].titleTranslation})</p>
+                    <p className={classes['song-artist']}>{props.songData[2].artist}</p>
                 </div>
             </div>
         </div>
