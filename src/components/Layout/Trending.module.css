@@ -63,3 +63,14 @@
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
+@media screen and (max-width: 412px) {
+    .trending-contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trending-container {
+        width: 60%;
+        margin-top: 1.5rem;
+    }
+}
