@@ -43,32 +43,26 @@
     font-size: 0.9rem;
     line-height: 150%;
 }
-@media screen and (max-width: 412px) {
+/* Responsive Mobile */
+@media only screen and (max-width: 516px) {
     .fyi-container {
-        display:flex;
-        flex-direction: column;
-        padding: 0;
-        height: auto;
-    }
-    .fyi-content__header {
-        font-size: 1.5rem;
-    }
-    .fyi-description {
-        font-size: 0.9rem;
-        line-height: 120%;
-    }
-    .fyi-header {
-        margin-bottom: 1rem;
+        height: 40rem;
+        padding: 0 0.5rem;
     }
     .fyi-content {
-        order: 1;
-        border-radius: 0;
+        height: 30rem;
+        padding: 1rem;
+        overflow: scroll;
     }
-    .fyi-button{
-        order: 2;
-        background-color: white;
-        border-radius: 1rem;
-        font-weight: bold;
+    .fyi-content::-webkit-scrollbar {
+        display: none;
     }
-    
+    .fyi-content__header {
+        font-size: 1.2rem;;
+    }
+    .fyi-image__container img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
 }
