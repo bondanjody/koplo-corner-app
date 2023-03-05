@@ -53,3 +53,22 @@
     font-size: 5rem;
     padding: 1.2rem;
 }
+@media screen and (max-width: 412px) {
+    .container {
+        width: 100%;
+    }
+    .genre-container__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .genre-content {
+        width: 80%;
+    }
+    .genre-description h4 {
+        font-size: 1.5rem;
+    }
+    .genre-vs {
+        font-size: 2.5rem;
+    }
+}
