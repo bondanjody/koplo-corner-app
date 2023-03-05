@@ -43,7 +43,7 @@ const Fyi = () => {
             <h2>For Your Information</h2>
         </div>
         <div className={classes['fyi-container']}>
-            <button className={classes['fyi-button']} onClick={prevHandler}>Prev</button>
+            <button className={classes['fyi-button']} onClick={prevHandler}>˂</button>
             <div className={classes['fyi-content']}>
                 <div className={classes['fyi-content__header']}>
                     {fyiList[showDataFyi].title}
@@ -55,7 +55,7 @@ const Fyi = () => {
                     {fyiList[showDataFyi].content}
                 </div>
             </div>
-            <button className={classes['fyi-button']} onClick={nextHandler}>Next</button>
+            <button className={classes['fyi-button']} onClick={nextHandler}>˃</button>
         </div>
     </Fragment>
 }

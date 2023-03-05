@@ -43,3 +43,32 @@
     font-size: 0.9rem;
     line-height: 150%;
 }
+@media screen and (max-width: 412px) {
+    .fyi-container {
+        display:flex;
+        flex-direction: column;
+        padding: 0;
+        height: auto;
+    }
+    .fyi-content__header {
+        font-size: 1.5rem;
+    }
+    .fyi-description {
+        font-size: 0.9rem;
+        line-height: 120%;
+    }
+    .fyi-header {
+        margin-bottom: 1rem;
+    }
+    .fyi-content {
+        order: 1;
+        border-radius: 0;
+    }
+    .fyi-button{
+        order: 2;
+        background-color: white;
+        border-radius: 1rem;
+        font-weight: bold;
+    }
+    
+}
