@@ -3,6 +3,7 @@
     color: white;
     display:flex;
     justify-content: space-evenly;
+    height: 23rem;
 }
 .social-section, .subscribe-section {
     width: 30%;
@@ -29,6 +30,7 @@ input {
     height: 2rem;
     border-radius: 0.5rem;
     border: none;
+    padding: 0 0.5rem;
 }
 .subscribe-button {
     width: 5rem;
@@ -39,6 +41,10 @@ input {
 }
 .subscribe-button:hover {
     cursor: pointer;
+}
+.subscribe-success p {
+    font-weight: lighter;
+    color: lightgray;
 }
 .contact-us__links {
     padding: 0.5rem;
