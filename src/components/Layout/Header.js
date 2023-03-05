@@ -1,10 +1,13 @@
 import { Fragment } from "react";
 import classes from './Header.module.css'
+import logoPic from '../../assets/logo.png';
 
 const Header = () => {
     return <Fragment>
         <header className={classes.header}>
-            <h1>Koplo Corner</h1>
+            <div className={classes['logo-container']}>
+                <a href="#"><img src={logoPic} alt={`${logoPic}.png`} /></a>
+            </div>
             <div className={classes.sideMenu}>
 
                     <a href="#">About</a>
