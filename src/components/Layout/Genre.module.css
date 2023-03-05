@@ -17,7 +17,6 @@
     justify-content: center;
 }
 .genre-content {
-    /* border: 0.1px solid black; */
     box-shadow: 5px 5px 5px #212121;
     padding: 1.5rem;
     width: 30%;
@@ -27,6 +26,10 @@
     align-items: center;
     line-height: 1.7;
     border-radius: 0.5em;
+    transition: scale 300ms;
+}
+.genre-content:hover {
+    scale: 1.03;
 }
 .genre-content img {
     width: 80%;
