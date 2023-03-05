@@ -39,5 +39,9 @@
     background-color: black;
     color: white;
 }
-
+@media screen and (max-width: 412px) {
+    .header {
+        width: 100%;
+    }
+}
 
