@@ -77,3 +77,26 @@
 .lyrics-content::-webkit-scrollbar {
     display: none;
 }
+@media only screen and (max-width: 516px) {
+    .modal {
+        width: 85%;
+        left: 2rem;
+        right: 2rem;
+        position: fixed;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+    }
+    .lyrics-content {
+        height: 17rem;
+    }
+    .close-lyrics {
+        top: -8.2rem;
+    }
+}

@@ -1,9 +1,6 @@
 import ReactDOM from 'react-dom';
 import classes from './ContentContainer.module.css';
 import { Fragment } from 'react';
-// import critoMustahilPic from '../../assets/crito-mustahil.png';
-// import lintangSewengiPic from '../../assets/lintang-sewengi.png';
-// import mangkuPurelPic from '../../assets/mangku-purel.png';
 
 const Backdrop = props => {
     return <div className={classes.backdrop} onClick={props.onHide}></div>
