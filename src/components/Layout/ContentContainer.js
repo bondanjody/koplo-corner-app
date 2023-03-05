@@ -5,8 +5,8 @@ import { Fragment } from 'react';
 // import lintangSewengiPic from '../../assets/lintang-sewengi.png';
 // import mangkuPurelPic from '../../assets/mangku-purel.png';
 
-const Backdrop = () => {
-    return <div className={classes.backdrop}></div>
+const Backdrop = props => {
+    return <div className={classes.backdrop} onClick={props.onHide}></div>
 }
 
 const Content = props => {
@@ -39,7 +39,7 @@ const Content = props => {
 const ContentContainer = props => {
     return (
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop />, document.getElementById('backdrop'))}
+            {ReactDOM.createPortal(<Backdrop onHide={props.onHide} />, document.getElementById('backdrop'))}
             {ReactDOM.createPortal(<Content lyricsData={props.lyricsData} onHide={props.onHide} />, document.getElementById('modal'))}
         </Fragment>
     )
