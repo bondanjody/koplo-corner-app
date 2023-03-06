@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import classes from './Header.module.css'
 import logoPic from '../../assets/logo.png';
 
-const Header = () => {
+const Header = props => {
     return <Fragment>
         <header className={classes.header}>
             <div className={classes['logo-container']}>
@@ -10,7 +10,7 @@ const Header = () => {
             </div>
             <div className={classes.sideMenu}>
 
-                    <a href="#">About</a>
+                    <a href="#" onClick={props.onAboutClick}>About</a>
                     <a href="#">Contribute</a>
             </div>
         </header>

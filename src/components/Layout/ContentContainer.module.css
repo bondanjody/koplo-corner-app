@@ -7,18 +7,6 @@
     z-index: 20;
     background: rgba(0, 0, 0, 0.75);
 }
-.modal {
-    position: fixed;
-    top: 2rem;
-    left:22%;
-    bottom: 2rem;
-    width: 50%;
-    margin: auto;
-    z-index: 100;
-    overflow: hidden;
-    background-color: white;
-    border-radius: 0.5rem;
-}
 .container {
     display: flex;
     padding: 2rem;
@@ -78,12 +66,6 @@
     display: none;
 }
 @media only screen and (max-width: 516px) {
-    .modal {
-        width: 85%;
-        left: 2rem;
-        right: 2rem;
-        position: fixed;
-    }
     .container {
         display: flex;
         flex-direction: column;

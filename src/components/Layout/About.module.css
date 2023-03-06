@@ -1,0 +1,29 @@
+.container {
+    margin: 0.5rem;
+    padding: 1rem;
+    position: relative;
+}
+.close-modal {
+    width: 2rem;
+    height: 2rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-weight: bold;
+    transition: color 300ms;
+}
+.close-modal:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+.about-logo img {
+    width: 100%;
+    height: auto;
+}
+.about-description p {
+    font-size: 1.2rem;
+}

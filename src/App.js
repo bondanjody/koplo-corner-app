@@ -8,9 +8,11 @@ import ContentContainer from "./components/Layout/ContentContainer";
 import critoMustahilPic from './assets/crito-mustahil.png';
 import lintangSewengiPic from './assets/lintang-sewengi.png';
 import sewuKutoPng from './assets/sewukuto.png';
+import About from "./components/Layout/About";
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
+  const [showTrending, setShowTrending] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
   const [finalResult, setFinalResult] = useState({}); 
   
   const songTrendingDatas = [
@@ -40,8 +42,13 @@ function App() {
     }
   ];
 
-  const hideTrendingContent = () => {
-    setShowModal(false);
+  const hideModal = () => {
+    setShowTrending(false);
+    setShowAbout(false);
+  }
+
+  const showAboutHandler = () => {
+    setShowAbout(true);
   }
 
   const getChartNumber = chartNum => {
@@ -50,12 +57,13 @@ function App() {
       const [newData] = filteredTrendingContent;
       return {...newData};
     })
-    setShowModal(true);
+    setShowTrending(true);
   }
 
   return <Fragment>
-    {showModal && <ContentContainer lyricsData={finalResult} onHide={hideTrendingContent} />}
-    <Header />
+    {showTrending && <ContentContainer lyricsData={finalResult} onHide={hideModal} />}
+    {showAbout && <About onHide={hideModal} />}
+    <Header onAboutClick={showAboutHandler} />
     <Trending songData={songTrendingDatas} onGetChartNum={getChartNumber} />
     <Fyi />
     <Genre />
