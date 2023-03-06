@@ -31,6 +31,40 @@
 .sideMenu {
     padding: 0.5rem;
     display: flex;
+    align-items: center;
+}
+.catalog {
+    position: relative;
+    padding: 0.5rem;
+}
+.catalog-title {
+    display: flex;
+    align-items: center;
+    width: 7.5rem;
+    justify-content: space-between;
+}
+.catalog-dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    width: 10rem;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.catalog:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+.catalog:hover .catalog-dropdown {
+    display: block;
+}
+.catalog-dropdown a:hover {
+    background-color: gray;
 }
 .sideMenu a {
     color: black;
