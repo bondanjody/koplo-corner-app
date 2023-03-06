@@ -1,10 +1,9 @@
 import ReactDOM from 'react-dom';
 import classes from './ContentContainer.module.css';
 import { Fragment } from 'react';
+import Backdrop from '../UI/Backdrop';
 
-const Backdrop = props => {
-    return <div className={classes.backdrop} onClick={props.onHide}></div>
-}
+
 
 const Content = props => {
     return <div className={classes.modal}>
@@ -36,7 +35,7 @@ const Content = props => {
 const ContentContainer = props => {
     return (
         <Fragment>
-            {ReactDOM.createPortal(<Backdrop onHide={props.onHide} />, document.getElementById('backdrop'))}
+            <Backdrop onHide={props.onHide} />
             {ReactDOM.createPortal(<Content lyricsData={props.lyricsData} onHide={props.onHide} />, document.getElementById('modal'))}
         </Fragment>
     )
