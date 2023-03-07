@@ -116,7 +116,7 @@
     background-color: black;
     color: white;
 }
-@media only screen and (max-width: 516px) {
+@media only screen and (max-width: 712px) {
     .header {
         width: 100%;
     }
