@@ -1,14 +1,13 @@
 .modal {
-    position: fixed;
+    position: absolute;
     top: 2rem;
-    left:22%;
-    right: 22%;
-    width: 50%;
-    margin: auto;
+    left: 100px;
+    width: calc(100% - 200px);
     z-index: 100;
     overflow: hidden;
     background-color: white;
     border-radius: 0.5rem;
+    animation: slide-down 300ms ease-out forwards;
 }
 @media only screen and (max-width: 516px) {
     .modal {
@@ -18,3 +17,13 @@
         position: fixed;
     }
 }
+@keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
