@@ -11,6 +11,19 @@ const Header = props => {
                 <a href="/"><img src={logoPic} alt={`${logoPic}.png`} /></a>
             </div>
             <div className={classes.sideMenu}>
+                    <div className={classes['hamburger-container']}>
+                        <div className={classes['hamburger-icon']}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div className={classes['hamburger-content']}>
+                            <a href="/">Song Catalog</a>
+                            <a href="/">Artist Catalog</a>
+                            <a href="/">About</a>
+                            <a href="/">Contribute</a>
+                        </div>
+                    </div>
                     <div className={classes['catalog']}>
                         <div className={classes['catalog-title']}>
                             <p>Song Catalog</p>
@@ -31,8 +44,8 @@ const Header = props => {
                             <a href="/">Campursari Artist</a>
                         </div>
                     </div>
-                    <a href="/" onClick={props.onAboutClick}>About</a>
-                    <a href="/">Contribute</a>
+                    <a href="/" onClick={props.onAboutClick} className={classes.about}>About</a>
+                    <a href="/" className={classes.contribute}>Contribute</a>
             </div>
         </header>
     </Fragment>
