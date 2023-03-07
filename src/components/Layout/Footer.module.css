@@ -3,7 +3,6 @@
     color: white;
     display:flex;
     justify-content: space-evenly;
-    height: 23rem;
 }
 .social-section, .subscribe-section {
     width: 30%;
