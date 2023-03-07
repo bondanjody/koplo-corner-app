@@ -13,9 +13,12 @@
 }
 .image-container {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-container img {
-    width: 100%;
+    max-width: 100%;
 }
 .song-container {
     flex-grow: 1;
@@ -65,7 +68,7 @@
 .lyrics-content::-webkit-scrollbar {
     display: none;
 }
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 645px) {
     .container {
         display: flex;
         flex-direction: column;
