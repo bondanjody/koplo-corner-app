@@ -8,7 +8,7 @@ const Header = props => {
     return <Fragment>
         <header className={classes.header}>
             <div className={classes['logo-container']}>
-                <a href="#"><img src={logoPic} alt={`${logoPic}.png`} /></a>
+                <a href="/"><img src={logoPic} alt={`${logoPic}.png`} /></a>
             </div>
             <div className={classes.sideMenu}>
                     <div className={classes['catalog']}>
@@ -17,8 +17,8 @@ const Header = props => {
                             {caretDownIcon} 
                         </div>
                         <div className={classes['catalog-dropdown']}>
-                            <a href="#">Koplo Songs</a>
-                            <a href="#">Campursari Songs</a>
+                            <a href="/">Koplo Songs</a>
+                            <a href="/">Campursari Songs</a>
                         </div>
                     </div>
                     <div className={classes['catalog']}>
@@ -27,12 +27,12 @@ const Header = props => {
                             {caretDownIcon} 
                         </div>
                         <div className={classes['catalog-dropdown']}>
-                            <a href="#">Koplo Artist</a>
-                            <a href="#">Campursari Artist</a>
+                            <a href="/">Koplo Artist</a>
+                            <a href="/">Campursari Artist</a>
                         </div>
                     </div>
-                    <a href="#" onClick={props.onAboutClick}>About</a>
-                    <a href="#">Contribute</a>
+                    <a href="/" onClick={props.onAboutClick}>About</a>
+                    <a href="/">Contribute</a>
             </div>
         </header>
     </Fragment>
