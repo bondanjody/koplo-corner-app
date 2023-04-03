@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/koplo-corner-app/static/css/main.8071b5bd.css",
+    "main.js": "/koplo-corner-app/static/js/main.d3211f08.js",
+    "static/media/campursari.png": "/koplo-corner-app/static/media/campursari.5b77dcdbc210b69cc4e7.png",
+    "static/media/koplo.png": "/koplo-corner-app/static/media/koplo.e8cd416f7518d45a5438.png",
+    "static/media/sewukuto.png": "/koplo-corner-app/static/media/sewukuto.f07dce6a75835d0122d9.png",
+    "static/media/lintang-sewengi.png": "/koplo-corner-app/static/media/lintang-sewengi.8623fd1b329c8cf07233.png",
+    "static/media/crito-mustahil.png": "/koplo-corner-app/static/media/crito-mustahil.87d91305b48f1d09cf0b.png",
+    "static/media/didikempot.jpg": "/koplo-corner-app/static/media/didikempot.4dbcdddd95049efe66d0.jpg",
+    "static/media/instagram.png": "/koplo-corner-app/static/media/instagram.2d5cedd576ca1a740d7c.png",
+    "static/media/twitter.png": "/koplo-corner-app/static/media/twitter.8926ec403245c8601a84.png",
+    "static/media/ketipung.jpg": "/koplo-corner-app/static/media/ketipung.be7edd1b05834620ac55.jpg",
+    "static/media/logo.png": "/koplo-corner-app/static/media/logo.a8124435a803e9ea2903.png",
+    "index.html": "/koplo-corner-app/index.html",
+    "main.8071b5bd.css.map": "/koplo-corner-app/static/css/main.8071b5bd.css.map",
+    "main.d3211f08.js.map": "/koplo-corner-app/static/js/main.d3211f08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8071b5bd.css",
+    "static/js/main.d3211f08.js"
+  ]
+}
